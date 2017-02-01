@@ -1,0 +1,67 @@
+@mixins phoneSmall {
+	@media only screen and (max-width: #{$phoneSmall}) {
+		@content;
+	}
+}
+
+@mixins phone {
+	@media only screen and (min-width: #{$phone}) and (max-width: #{$tablet -1px}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media only screen and (min-width: #{$tablet}) and (max-width: #{$desktop -1px}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media only screen and (min-width: #{$desktop}) and (max-width: #{$desktopBig -1px}) {
+		@content;	
+	}
+}
+
+@mixins desktopBig {
+	@media only screen and (max-width: #{$desktopBig}) {
+		@content;
+	}
+}
+
+@mixin border-radius($border) {
+	border-radius: $border;
+}
+
+@mixin clearfix {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin imagen-fondo($imagen, $height: 100vh, $bgPos: center center){
+	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.6)), url($imagen);
+	background-position: $bgPos;
+	background-repeat: no repeat;
+	background-size: cover;
+	height: $height;
+}
+
+@mixin gridImagenes($cantidad, $margin) {
+	width: ((100% - (($cantidad - 1) * $margin))/$cantidad);
+	&:nth-child(n) {
+		margin-right: $margin;
+		margin-bottom: $margin;
+	}
+	&:nth-child(#{$cantidad}n + 1) {
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+}
+
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
