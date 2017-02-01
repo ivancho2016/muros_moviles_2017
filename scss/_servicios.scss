@@ -1,0 +1,72 @@
+.servicios-principal {
+	background-color: $blanco;
+	.h1-home {
+		font-size: 2.2rem;
+		color: $verde2;
+		text-align: center;
+	}
+	.h2-home {
+		font-size: 1rem;
+		text-align: center;
+		color: $gris1;
+	}
+	.h3-home {
+		font-size: 1.1rem;
+		text-align: center;
+		color: $negro1;
+		text-transform: uppercase;
+	}
+	.p-info {
+		color: $gris1;
+		font-size: 0.9rem;
+		text-align: center;
+	}
+	.btn-link {
+		color: $blanco;
+		background-color: $verde2;
+		padding: 10px 20px;
+		border-radius: 5px;
+		&:hover {
+			color: $verde2;
+			border: 1px solid $verde2;
+		}
+	}
+	.h2-seccion {
+		background-color: $blanco;
+		color: $negro1;
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+.ultimos-proyectos {
+	background-color: $negro1;
+	.h2-seccion {
+		color: $blanco;
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		text-align: center;
+		border-bottom: 2px solid $verde1;
+	}
+	.menu-categoria {
+		font-size: 0.9rem;
+		li {
+			a {
+				color: $gris1;
+				text-decoration: none;
+				&:hover {
+					color: $verde1;
+					border-bottom: 2px solid $verde1;
+				}
+				&:focus {
+					color: $verde1;
+					border-bottom: 2px solid $verde1;
+				}
+			}
+		}
+	}
+}
+.resumen-titulo {
+	color: $gris1;
+	font-size: 0.9rem;
+}

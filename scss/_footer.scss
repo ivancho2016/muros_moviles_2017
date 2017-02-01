@@ -1,0 +1,46 @@
+.footer-contenedor {
+	background-color: $negro1;
+	color: $gris1;
+	h4 {
+		color: $blanco;
+		font-size: 0.9rem;
+	}
+	span {
+		font-size: 0.8rem;
+	}
+	.mapa-sitio {
+		ul {
+			list-style: none;
+			li {
+				a {
+					color: $gris1;
+					text-decoration: none;
+					&:hover {
+						color: $verde1;
+						border-bottom: 1px solid $verde1;
+					}
+				}
+			}
+		}
+	}
+	.social-pie {
+		text-align: center;
+		font-size: 1.8rem;
+		a {
+			color: $verde2;
+			padding: 0 10px;
+		}
+	}
+	.p-playweb {
+		color: $gris1;
+		font-size: 0.9rem;
+		text-align: center;
+		a {
+			color: $verde2;
+			text-decoration: none;
+			&:hover {
+				border-bottom: 1px solid $verde1;
+			}
+		}
+	}
+}

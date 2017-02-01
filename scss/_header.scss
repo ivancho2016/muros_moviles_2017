@@ -1,0 +1,43 @@
+.fila-top {
+	background-color: $negro1;
+	color: $blanco;
+	i {
+		color: $verde2;
+		font-size: 1.1rem;
+		margin-right: 10px;
+	}
+	span {
+		font-size: 0.8rem;
+	}
+	@include phoneSmall {
+		display: none;
+	}
+}
+.fila-menu {
+	background-color: $blanco;
+	.menu-principal {
+		ul {
+			list-style: none;
+			padding: 0;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 0.9rem;
+			font-weight: 600;
+			li {
+				background-color: $negro1;
+				position: relative;
+				line-height: 3rem;
+				border-bottom: 1px solid $gris1;
+				a {
+					color: $gris1;
+					text-decoration: none;
+					i {
+						position: absolute;
+						right: 20px;
+						line-height: 3rem;
+					}
+				}
+			}
+		}
+	}
+}
