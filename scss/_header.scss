@@ -69,3 +69,25 @@
 		}
 	}
 }
+.banner {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+}
+.flechaBajar a {
+	display: inline-block;
+	color: $verde2;
+	font-size: 4rem;
+	animation: flechaAnimada 2s ease-in-out infinite;
+}
+@keyframes flechaAnimada {
+	from {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(6px);
+	}
+	to {
+		transform: translateY(0);
+	}
+}

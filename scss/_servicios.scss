@@ -1,7 +1,9 @@
 .servicios-principal {
 	background-color: $blanco;
+	display: flex;
+	flex-direction: column;
 	.h1-home {
-		font-size: 2.2rem;
+		font-size: 2rem;
 		color: $verde2;
 		text-align: center;
 	}
@@ -9,26 +11,34 @@
 		font-size: 1rem;
 		text-align: center;
 		color: $gris1;
+		line-height: 1.3rem;
+		margin: 2rem 0;
 	}
 	.h3-home {
 		font-size: 1.1rem;
 		text-align: center;
 		color: $negro1;
 		text-transform: uppercase;
+		margin: 2rem 0;
 	}
 	.p-info {
 		color: $gris1;
 		font-size: 0.9rem;
 		text-align: center;
+		padding: 0 1rem;
 	}
 	.btn-link {
 		color: $blanco;
 		background-color: $verde2;
 		padding: 10px 20px;
 		border-radius: 5px;
+		width: 40%;
+		margin: 1rem auto 2rem;
 		&:hover {
-			color: $verde2;
-			border: 1px solid $verde2;
+			text-decoration: none;
+		}
+		i {
+			margin-left: 0.5rem;
 		}
 	}
 	.h2-seccion {
@@ -37,6 +47,11 @@
 		font-size: 1.4rem;
 		text-transform: uppercase;
 		text-align: center;
+	}
+	.img-servicios {
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
 	}
 }
 .ultimos-proyectos {
