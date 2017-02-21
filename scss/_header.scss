@@ -15,7 +15,28 @@
 }
 .fila-menu {
 	background-color: $blanco;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.logotipo img {
+		width: 150px;
+		height: auto;
+	}
+	.boton-menu {
+		border: 0;
+		font-size: 1.8rem;
+		margin: 0;
+		padding: 0 .5rem;
+		background-color: transparent;
+		color: $negro1;
+		margin-right: 1rem;
+	}
+	.boton-menu:focus {
+		outline: 0;
+	}
 	.menu-principal {
+		flex: 1 1 100%;
 		ul {
 			list-style: none;
 			padding: 0;
@@ -23,6 +44,7 @@
 			text-align: center;
 			font-size: 0.9rem;
 			font-weight: 600;
+			margin: 1rem 0 0 0;
 			li {
 				background-color: $negro1;
 				position: relative;
@@ -31,11 +53,17 @@
 				a {
 					color: $gris1;
 					text-decoration: none;
+					&:hover {
+						color: $verde2;
+					}
 					i {
 						position: absolute;
 						right: 20px;
 						line-height: 3rem;
 					}
+				}
+				.active {
+					color: $verde2;
 				}
 			}
 		}
