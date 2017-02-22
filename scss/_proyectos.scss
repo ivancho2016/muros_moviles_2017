@@ -1,0 +1,54 @@
+.ultimos-proyectos {
+	background-color: $negro1;
+	padding: 3rem 0;
+	.h2-seccion {
+		color: $blanco;
+		font-size: 2rem;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 2rem 0;
+	}
+	.menu-categoria {
+		font-size: 1rem;
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-bottom: 2rem;
+		li {
+			a {
+				color: $gris1;
+				padding: 5px 10px;
+				text-decoration: none;
+				&:hover {
+					color: $verde1;
+					border-bottom: 2px solid $verde1;
+				}
+				&:focus {
+					color: $verde1;
+					border-bottom: 2px solid $verde1;
+				}
+			}
+			.active {
+				color: $verde1;
+				border-bottom: 2px solid $verde1;
+			}
+		}
+	}
+}
+.galeria {
+	display: flex;
+	flex-direction: column;
+	.img-galeria {
+		width: 90%;
+		height: auto;
+		max-width: 400px;
+		margin: 0 auto;
+		border: 1px solid $negro1;
+	}	
+}
+.resumen-titulo {
+	color: $gris1;
+	font-size: 1.1rem;
+	padding: 1rem 2rem;
+}

@@ -2,6 +2,7 @@
 	background-color: $blanco;
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 3rem;
 	.h1-home {
 		font-size: 2rem;
 		color: $verde2;
@@ -52,36 +53,6 @@
 		width: 90%;
 		height: auto;
 		margin: 0 auto;
+		max-width: 400px;
 	}
-}
-.ultimos-proyectos {
-	background-color: $negro1;
-	.h2-seccion {
-		color: $blanco;
-		font-size: 1.4rem;
-		text-transform: uppercase;
-		text-align: center;
-		border-bottom: 2px solid $verde1;
-	}
-	.menu-categoria {
-		font-size: 0.9rem;
-		li {
-			a {
-				color: $gris1;
-				text-decoration: none;
-				&:hover {
-					color: $verde1;
-					border-bottom: 2px solid $verde1;
-				}
-				&:focus {
-					color: $verde1;
-					border-bottom: 2px solid $verde1;
-				}
-			}
-		}
-	}
-}
-.resumen-titulo {
-	color: $gris1;
-	font-size: 0.9rem;
 }

@@ -11666,7 +11666,7 @@ body {
   background-color: #252525;
   color: #FFFFFF; }
   .fila-top i {
-    color: #B6BF30;
+    color: #F3FF40;
     font-size: 1.1rem;
     margin-right: 10px; }
   .fila-top span {
@@ -11743,7 +11743,8 @@ body {
 .servicios-principal {
   background-color: #FFFFFF;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-bottom: 3rem; }
   .servicios-principal .h1-home {
     font-size: 2rem;
     color: #B6BF30;
@@ -11785,20 +11786,28 @@ body {
   .servicios-principal .img-servicios {
     width: 90%;
     height: auto;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 400px; }
 
 .ultimos-proyectos {
-  background-color: #252525; }
+  background-color: #252525;
+  padding: 3rem 0; }
   .ultimos-proyectos .h2-seccion {
     color: #FFFFFF;
-    font-size: 1.4rem;
+    font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
-    border-bottom: 2px solid #F3FF40; }
+    padding: 2rem 0; }
   .ultimos-proyectos .menu-categoria {
-    font-size: 0.9rem; }
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem; }
     .ultimos-proyectos .menu-categoria li a {
       color: #969696;
+      padding: 5px 10px;
       text-decoration: none; }
       .ultimos-proyectos .menu-categoria li a:hover {
         color: #F3FF40;
@@ -11806,10 +11815,40 @@ body {
       .ultimos-proyectos .menu-categoria li a:focus {
         color: #F3FF40;
         border-bottom: 2px solid #F3FF40; }
+    .ultimos-proyectos .menu-categoria li .active {
+      color: #F3FF40;
+      border-bottom: 2px solid #F3FF40; }
+
+.galeria {
+  display: flex;
+  flex-direction: column; }
+  .galeria .img-galeria {
+    width: 90%;
+    height: auto;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #252525; }
 
 .resumen-titulo {
   color: #969696;
-  font-size: 0.9rem; }
+  font-size: 1.1rem;
+  padding: 1rem 2rem; }
+
+.servicios-secundarios {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0; }
+  .servicios-secundarios .h2-seccion {
+    color: #252525;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem 0; }
+  .servicios-secundarios span {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    display: block;
+    background-color: #F3FF40; }
 
 .footer-contenedor {
   background-color: #252525;
@@ -11831,14 +11870,14 @@ body {
     text-align: center;
     font-size: 1.8rem; }
     .footer-contenedor .social-pie a {
-      color: #B6BF30;
+      color: #F3FF40;
       padding: 0 10px; }
   .footer-contenedor .p-playweb {
     color: #969696;
     font-size: 0.9rem;
     text-align: center; }
     .footer-contenedor .p-playweb a {
-      color: #B6BF30;
+      color: #F3FF40;
       text-decoration: none; }
       .footer-contenedor .p-playweb a:hover {
         border-bottom: 1px solid #F3FF40; }
