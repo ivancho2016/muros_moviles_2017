@@ -1,93 +1,39 @@
-.fila-top {
-	background-color: $negro1;
-	color: $blanco;
-	i {
-		color: $verde1;
-		font-size: 1.1rem;
-		margin-right: 10px;
-	}
-	span {
-		font-size: 0.8rem;
-	}
+/*.datos-contacto {
 	@include phoneSmall {
 		display: none;
 	}
-}
-.fila-menu {
-	background-color: $blanco;
+	@include phone {
+		display: none;
+	}
+}*/
+.fila-top {
+	background-color: $negro1;
+	color: $blanco;
+	height: 50px;
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	.logotipo img {
-		width: 150px;
-		height: auto;
-	}
-	.boton-menu {
-		border: 0;
-		font-size: 1.8rem;
-		margin: 0;
-		padding: 0 .5rem;
-		background-color: transparent;
-		color: $negro1;
-		margin-right: 1rem;
-	}
-	.boton-menu:focus {
-		outline: 0;
-	}
-	.menu-principal {
-		flex: 1 1 100%;
-		ul {
-			list-style: none;
-			padding: 0;
-			text-transform: uppercase;
-			text-align: center;
-			font-size: 0.9rem;
-			font-weight: 600;
-			margin: 1rem 0 0 0;
-			li {
-				background-color: $negro1;
-				position: relative;
-				line-height: 3rem;
-				border-bottom: 1px solid $gris1;
-				a {
-					color: $gris1;
-					text-decoration: none;
-					&:hover {
-						color: $verde2;
-					}
-					i {
-						position: absolute;
-						right: 20px;
-						line-height: 3rem;
-					}
-				}
-				.active {
-					color: $verde2;
-				}
+	.datos-contacto {
+		.dato-contacto {
+			display: inline-block;
+			margin-right: 2rem;
+			i {
+				color: $verde1;
+				font-size: 0.9rem;
+				margin-right: 1rem;
 			}
+			span {
+				font-size: 0.7rem;
+			}	
 		}
 	}
-}
-.banner {
-	display: flex;
-	flex-direction: column;
-	flex: 1 1 auto;
-}
-.flechaBajar a {
-	display: inline-block;
-	color: $verde2;
-	font-size: 4rem;
-	animation: flechaAnimada 2s ease-in-out infinite;
-}
-@keyframes flechaAnimada {
-	from {
-		transform: translateY(0);
-	}
-	50% {
-		transform: translateY(6px);
-	}
-	to {
-		transform: translateY(0);
+	.datos-social {
+		i {
+			color: $verde1;
+			font-size: 1.1rem;
+			margin-right: 15px;
+		}
+		span {
+			font-size: 0.7rem;
+		}	
 	}
 }
