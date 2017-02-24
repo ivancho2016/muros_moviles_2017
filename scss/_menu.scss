@@ -1,5 +1,16 @@
 .fila-menu {
 	background-color: $blanco;
+	.logotipo {
+		width: 40%;
+		display: block;
+		border: 1px solid red;
+		img {
+			width: 100%;
+		}
+	}
+}
+/*.fila-menu {
+	background-color: $blanco;
 	border: 1px solid red;
 	display: flex;
 	align-items: center;
@@ -76,4 +87,4 @@
 	to {
 		transform: translateY(0);
 	}
-}
+}*/
