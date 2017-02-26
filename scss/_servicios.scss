@@ -1,58 +1,51 @@
 .servicios-principal {
 	background-color: $blanco;
-	display: flex;
-	flex-direction: column;
-	padding-bottom: 3rem;
+	padding: 3rem 0;
 	.h1-home {
 		font-size: 2rem;
 		color: $verde2;
-		text-align: center;
 	}
 	.h2-home {
 		font-size: 1rem;
-		text-align: center;
 		color: $gris1;
 		line-height: 1.3rem;
 		margin: 2rem 0;
+		font-weight: 600;
 	}
-	.h3-home {
-		font-size: 1.1rem;
-		text-align: center;
-		color: $negro1;
-		text-transform: uppercase;
-		margin: 2rem 0;
-	}
-	.p-info {
-		color: $gris1;
-		font-size: 0.9rem;
-		text-align: center;
-		padding: 0 1rem;
-	}
-	.btn-link {
-		color: $blanco;
-		background-color: $verde2;
-		padding: 10px 20px;
-		border-radius: 5px;
-		width: 40%;
-		margin: 1rem auto 2rem;
-		&:hover {
-			text-decoration: none;
+	.servicio-item {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem 0;
+		.h3-home {
+			font-size: 1.1rem;
+			text-align: center;
+			color: $negro1;
+			text-transform: uppercase;
+			margin: 2rem 0;
 		}
-		i {
-			margin-left: 0.5rem;
+		.p-info {
+			color: $gris1;
+			font-size: 0.9rem;
+			text-align: center;
+			padding: 0 1rem;
 		}
-	}
-	.h2-seccion {
-		background-color: $blanco;
-		color: $negro1;
-		font-size: 1.4rem;
-		text-transform: uppercase;
-		text-align: center;
-	}
-	.img-servicios {
-		width: 90%;
-		height: auto;
-		margin: 0 auto;
-		max-width: 400px;
+		.btn-link {
+			color: $blanco;
+			background-color: $verde2;
+			padding: 10px 20px;
+			border-radius: 5px;
+			width: 40%;
+			margin: 1rem auto 2rem;
+			&:hover {
+				text-decoration: none;
+			}
+			i {
+				margin-left: 0.5rem;
+			}
+		}
+		img {
+			max-width: 400px;
+			margin: 0 auto;
+		}
 	}
 }
