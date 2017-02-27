@@ -1,8 +1,7 @@
 .fila-menu {
 	background-color: $blanco;
 	color: $negro1;
-	padding: 0.5rem 0 0 0;
-	border: 1px solid red;
+	padding: .5rem 0 0 0;
 	.container {
 		display: flex;
 		align-items: center;
@@ -19,7 +18,7 @@
 			border: 0;
 			font-size: 1.8rem;
 			margin-left: auto;
-			margin-right: 0.5rem;
+			margin-right: .5rem;
 			padding: 0 .5rem;
 			background-color: transparent;
 			color: $negro1;
@@ -39,11 +38,11 @@
 				a {
 					background-color: $negro1;
 					display: block;
-					padding: 0.8rem 0;
+					padding: .8rem 0;
 					text-align: center;
 					text-transform: uppercase;
 					font-weight: 400;
-					font-size: 0.9rem;
+					font-size: .9rem;
 					color: $blanco;
 					border-top: 1px solid $gris1;
 					text-decoration: none;
@@ -52,16 +51,54 @@
 				a::after {
 					content:"\f054";
 					font-family: FontAwesome;
-					font-size: 0.8rem;
+					font-size: .8rem;
 					margin-left: 1rem;
 					opacity: .5;
 					position: absolute;
 					right: 2rem;
 				}
 				a:hover {
-					color: $verde1;
+					color: $verde2;
 				}
 			}
+		}
+	}
+}
+
+/* ---------------------------------
+Queries del sitio web
+----------------------------------*/
+@include desktop {
+	.fila-menu {
+		.container {
+			.menu-principal {
+				height: auto !important;
+				display: block;
+				flex: 0 1 auto;
+				margin-left: auto;
+				ul {
+					display: flex;
+					margin: 0;
+					.active a {
+						border-bottom: 2px solid $verde2; 
+					}
+					a {
+						background-color: $blanco;
+						color: $negro2;
+						padding: .5rem;
+						margin: 0 .3rem;
+						border-top: 0px;
+						border-bottom: 2px solid transparent;
+						transition: all ease .5s;
+						&::after {
+							display: none;
+						}
+						&:hover {
+							border-bottom: 2px solid $verde2;
+						}
+					}
+				}
+			}	
 		}
 	}
 }
