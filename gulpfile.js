@@ -12,12 +12,12 @@ var rename = require('gulp-rename');
 var htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 
-var fuentesJS = ['js/funciones.js', 'js/scripts.js']
+var fuentesJS = ['js/funciones.js', 'js/scripts.js'];
 
 /*tarea de sass para preprocesar archivos y generar el css*/
 gulp.task('sass', function() {
 	var archivosSASS,
-	archivosCSS, archivosFONTS;
+	archivosCSS, archivosFONTS, archivosOWL;
 
 	archivosSASS = gulp.src('scss/app.scss')
 	.pipe(autoprefixer())
@@ -28,6 +28,8 @@ gulp.task('sass', function() {
 	archivosCSS = gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css');
 
 	archivosFONTS = gulp.src('./app/css/font-awesome.css');
+
+	//archivosOWL = gulp.src('./app/css/owl.carousel.css');
 
 	return merge(archivosSASS, archivosCSS, archivosFONTS)
 	.pipe(concat('app.css'))
