@@ -11797,18 +11797,22 @@ Queries del sitio web
   .servicios-principal .servicio-item {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0; }
+    padding: 1rem 0;
+    justify-content: space-between; }
     .servicios-principal .servicio-item .h3-home {
       font-size: 1.1rem;
       text-align: center;
       color: #252525;
       text-transform: uppercase;
-      margin: 2rem 0; }
+      margin: 2rem 0;
+      flex: 1 1 100%; }
     .servicios-principal .servicio-item .p-info {
       color: #969696;
       font-size: 0.9rem;
       text-align: center;
-      padding: 0 1rem; }
+      padding: 0 1rem;
+      flex: 1 1 100%;
+      justify-content: center; }
     .servicios-principal .servicio-item .btn-link {
       color: #FFFFFF;
       background-color: #B6BF30;
@@ -11887,22 +11891,24 @@ Queries del sitio web
     background-color: #F3FF40; }
 
 .llamado {
-  background-color: #F3FF40;
-  padding: 1.5rem 0; }
+  background-color: #B6BF30;
+  padding: 1.5rem 0;
+  text-align: center; }
   .llamado .p-llamado {
     text-transform: uppercase;
-    color: #252525;
+    color: #FFFFFF;
     font-weight: 600; }
   .llamado .btn-link {
     color: #151515;
     background-color: #FFFFFF;
     padding: 10px 20px;
     border-radius: 5px;
-    max-width: 200px;
-    margin: 0 auto;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    display: block;
+    max-width: 200px;
+    margin: 1rem auto; }
     .llamado .btn-link:hover {
       text-decoration: none;
       background-color: rgba(255, 255, 255, 0.8); }
