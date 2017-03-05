@@ -11886,32 +11886,67 @@ Queries del sitio web
     display: block;
     background-color: #F3FF40; }
 
+.llamado {
+  background-color: #F3FF40;
+  padding: 1.5rem 0; }
+  .llamado .p-llamado {
+    text-transform: uppercase;
+    color: #252525;
+    font-weight: 600; }
+  .llamado .btn-link {
+    color: #151515;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    max-width: 200px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem; }
+    .llamado .btn-link:hover {
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.8); }
+    .llamado .btn-link i {
+      margin-left: 0.5rem; }
+
 .footer-contenedor {
   background-color: #252525;
-  color: #969696; }
+  color: #969696;
+  padding-top: 2rem; }
   .footer-contenedor h4 {
     color: #FFFFFF;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    line-height: 2rem; }
   .footer-contenedor span {
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    display: block; }
+    .footer-contenedor span i {
+      margin-right: 0.5rem;
+      width: 1rem;
+      text-align: center; }
   .footer-contenedor .mapa-sitio ul {
-    list-style: none; }
-    .footer-contenedor .mapa-sitio ul li a {
-      color: #969696;
-      text-decoration: none; }
-      .footer-contenedor .mapa-sitio ul li a:hover {
-        color: #F3FF40;
-        border-bottom: 1px solid #F3FF40; }
+    list-style: none;
+    padding: 0; }
+    .footer-contenedor .mapa-sitio ul li {
+      font-size: 0.8rem; }
+      .footer-contenedor .mapa-sitio ul li a {
+        color: #969696;
+        text-decoration: none; }
+        .footer-contenedor .mapa-sitio ul li a:hover {
+          color: #F3FF40;
+          border-bottom: 1px solid #F3FF40; }
   .footer-contenedor .social-pie {
     text-align: center;
-    font-size: 1.8rem; }
+    font-size: 1.6rem; }
     .footer-contenedor .social-pie a {
-      color: #F3FF40;
+      color: #FFFFFF;
       padding: 0 10px; }
   .footer-contenedor .p-playweb {
     color: #969696;
     font-size: 0.9rem;
-    text-align: center; }
+    text-align: center;
+    margin: 0;
+    line-height: 3rem; }
     .footer-contenedor .p-playweb a {
       color: #F3FF40;
       text-decoration: none; }

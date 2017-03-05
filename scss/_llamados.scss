@@ -1,0 +1,27 @@
+.llamado {
+	background-color: $verde1;
+	padding: 1.5rem 0;
+	.p-llamado {
+		text-transform: uppercase;
+		color: $negro1;
+		font-weight: 600;
+	}
+	.btn-link {
+		color: $negro2;
+		background-color: $blanco;
+		padding: 10px 20px;
+		border-radius: 5px;
+		max-width: 200px;
+		margin: 0 auto;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 0.9rem;
+		&:hover {
+			text-decoration: none;
+			background-color: rgba(255,255,255,.8);
+		}
+		i {
+			margin-left: 0.5rem;
+		}
+	}
+}
