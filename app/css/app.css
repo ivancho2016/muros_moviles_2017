@@ -11673,16 +11673,16 @@ body {
     margin-right: 2rem; }
     .fila-top .datos-contacto .dato-contacto i {
       color: #F3FF40;
-      font-size: 0.9rem;
+      font-size: .9rem;
       margin-right: 1rem; }
     .fila-top .datos-contacto .dato-contacto span {
-      font-size: 0.7rem; }
+      font-size: .7rem; }
   .fila-top .datos-social i {
     color: #F3FF40;
     font-size: 1.1rem;
     margin-right: 1rem; }
   .fila-top .datos-social span {
-    font-size: 0.7rem; }
+    font-size: .7rem; }
 
 .fila-menu {
   background-color: #FFFFFF;
@@ -11767,20 +11767,54 @@ Queries del sitio web
           border-bottom: 2px solid #B6BF30; } }
 
 .banner {
-  border: 1px solid red;
-  margin-top: 110px; }
+  margin-top: 92px;
+  position: relative; }
+  .banner .p-banner {
+    background: rgba(0, 0, 0, 0.7);
+    display: block;
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: -1rem; }
   .banner .carousel-item-1 {
-    background: url("../img/banner1.jpg") no-repeat;
+    background: url("../img/muro-movil-acustico.jpg") no-repeat;
     background-size: cover;
-    height: 25vh; }
+    height: 35vh; }
   .banner .carousel-item-2 {
-    background: url("../img/banner1.jpg") no-repeat;
+    background: url("../img/muro-movil-mexico.jpg") no-repeat;
     background-size: cover;
-    height: 25vh; }
+    height: 35vh; }
   .banner .carousel-item-3 {
-    background: url("../img/banner1.jpg") no-repeat;
+    background: url("../img/muros-acusticos-garcia.jpg") no-repeat;
     background-size: cover;
-    height: 25vh; }
+    height: 35vh; }
+  .banner .carousel-item-4 {
+    background: url("../img/muros-acustico-movil.jpg") no-repeat;
+    background-size: cover;
+    height: 35vh; }
+
+/* ---------------------------------
+Queries tablet
+----------------------------------*/
+@media only screen and (min-width: 768px) {
+  .banner .p-banner {
+    height: 3rem;
+    line-height: 3rem; }
+  .banner .carousel-item-1, .banner .carousel-item-2, .banner .carousel-item-3, .banner .carousel-item-4 {
+    height: 40vh; } }
+
+/* ---------------------------------
+Queries desktop
+----------------------------------*/
+@media only screen and (min-width: 992px) {
+  .banner .p-banner {
+    height: 3rem;
+    line-height: 3rem; }
+  .banner .carousel-item-1, .banner .carousel-item-2, .banner .carousel-item-3, .banner .carousel-item-4 {
+    height: 60vh; } }
 
 .servicios-principal {
   background-color: #FFFFFF;
@@ -11823,11 +11857,27 @@ Queries del sitio web
       .servicios-principal .servicio-item .btn-link:hover {
         text-decoration: none; }
       .servicios-principal .servicio-item .btn-link i {
-        margin-left: 0.5rem; }
+        margin-left: .5rem; }
     .servicios-principal .servicio-item img {
       max-width: 400px;
       margin: 0 auto;
       width: 100%; }
+
+/* ---------------------------------
+Queries tablet
+----------------------------------*/
+@media only screen and (min-width: 768px) {
+  .servicios-principal .servicio-item .btn-link {
+    width: 25%; } }
+
+/* ---------------------------------
+Queries tablet
+----------------------------------*/
+@media only screen and (min-width: 992px) {
+  .servicios-principal .servicio-item {
+    padding: 1rem; }
+    .servicios-principal .servicio-item .btn-link {
+      width: 40%; } }
 
 .ultimos-proyectos {
   background-color: #252525;
@@ -11877,18 +11927,58 @@ Queries del sitio web
 .servicios-secundarios {
   display: flex;
   flex-direction: column;
-  padding: 3rem 0; }
+  padding: 3rem 0 0 0; }
   .servicios-secundarios .h2-seccion {
     color: #252525;
     font-size: 1.3rem;
     text-transform: uppercase;
     text-align: center;
     padding: 2rem 0; }
-  .servicios-secundarios span {
+  .servicios-secundarios .resumen-titulo {
+    color: #969696;
+    font-size: 1rem;
+    padding: 0; }
+  .servicios-secundarios .big-service {
+    display: flex;
+    flex: 1 1 100%;
+    color: #151515;
+    font-size: 1rem;
     text-transform: uppercase;
-    font-size: 1.1rem;
-    display: block;
-    background-color: #F3FF40; }
+    border: 1px solid #EBEBEB;
+    min-height: 10rem;
+    margin: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    flex-direction: column; }
+    .servicios-secundarios .big-service img {
+      flex: 1 1 100%;
+      width: 80px;
+      margin: 1rem auto; }
+    .servicios-secundarios .big-service span {
+      flex: 1 1 100%;
+      text-align: center; }
+  .servicios-secundarios .lista-servicios2 {
+    width: 100%; }
+    .servicios-secundarios .lista-servicios2 .item-lista {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1rem; }
+      .servicios-secundarios .lista-servicios2 .item-lista .info-lista {
+        width: 80%; }
+        .servicios-secundarios .lista-servicios2 .item-lista .info-lista h3 {
+          font-size: 1.2rem; }
+        .servicios-secundarios .lista-servicios2 .item-lista .info-lista p {
+          font-size: 0.9rem;
+          color: #969696;
+          line-height: 1.5rem; }
+      .servicios-secundarios .lista-servicios2 .item-lista .img-lista {
+        width: 20%;
+        max-width: 50px;
+        margin-right: 2rem; }
+    .servicios-secundarios .lista-servicios2 .img-guy {
+      max-width: 320px; }
+  .servicios-secundarios .fila-servicios2 {
+    margin: 2rem 0 0 0; }
 
 .llamado {
   background-color: #B6BF30;
@@ -11896,7 +11986,7 @@ Queries del sitio web
   text-align: center; }
   .llamado .p-llamado {
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #252525;
     font-weight: 600; }
   .llamado .btn-link {
     color: #151515;
@@ -11905,7 +11995,7 @@ Queries del sitio web
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: .9rem;
     display: block;
     max-width: 200px;
     margin: 1rem auto; }
@@ -11913,7 +12003,7 @@ Queries del sitio web
       text-decoration: none;
       background-color: rgba(255, 255, 255, 0.8); }
     .llamado .btn-link i {
-      margin-left: 0.5rem; }
+      margin-left: .5rem; }
 
 .footer-contenedor {
   background-color: #252525;
@@ -11921,10 +12011,10 @@ Queries del sitio web
   padding-top: 2rem; }
   .footer-contenedor h4 {
     color: #FFFFFF;
-    font-size: 0.9rem;
+    font-size: .9rem;
     line-height: 2rem; }
   .footer-contenedor span {
-    font-size: 0.8rem;
+    font-size: .8rem;
     display: block; }
     .footer-contenedor span i {
       margin-right: 0.5rem;
@@ -11934,7 +12024,7 @@ Queries del sitio web
     list-style: none;
     padding: 0; }
     .footer-contenedor .mapa-sitio ul li {
-      font-size: 0.8rem; }
+      font-size: .8rem; }
       .footer-contenedor .mapa-sitio ul li a {
         color: #969696;
         text-decoration: none; }
@@ -11949,7 +12039,7 @@ Queries del sitio web
       padding: 0 10px; }
   .footer-contenedor .p-playweb {
     color: #969696;
-    font-size: 0.9rem;
+    font-size: .9rem;
     text-align: center;
     margin: 0;
     line-height: 3rem; }

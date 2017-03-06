@@ -44,13 +44,40 @@
 				text-decoration: none;
 			}
 			i {
-				margin-left: 0.5rem;
+				margin-left: .5rem;
 			}
 		}
 		img {
 			max-width: 400px;
 			margin: 0 auto;
 			width: 100%;
+		}
+	}
+}
+
+/* ---------------------------------
+Queries tablet
+----------------------------------*/
+@include tablet {
+	.servicios-principal {
+		.servicio-item {
+			.btn-link {
+				width: 25%;
+			}
+		}
+	}
+}
+
+/* ---------------------------------
+Queries tablet
+----------------------------------*/
+@include desktop {
+	.servicios-principal {
+		.servicio-item {
+			padding: 1rem;
+			.btn-link {
+				width: 40%;
+			}
 		}
 	}
 }
