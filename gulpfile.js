@@ -17,7 +17,7 @@ var fuentesJS = ['js/funciones.js', 'js/scripts.js'];
 /*tarea de sass para preprocesar archivos y generar el css*/
 gulp.task('sass', function() {
 	var archivosSASS,
-	archivosCSS, archivosFONTS, archivosOWL;
+	archivosCSS, archivosFONTS, archivosOWL, archivosTether;
 
 	archivosSASS = gulp.src('scss/app.scss')
 	.pipe(autoprefixer())
@@ -29,9 +29,11 @@ gulp.task('sass', function() {
 
 	archivosFONTS = gulp.src('./app/css/font-awesome.css');
 
-	//archivosOWL = gulp.src('./app/css/owl.carousel.css');
+	archivosOWL = gulp.src('./app/css/owl.carousel.min.css');
 
-	return merge(archivosSASS, archivosCSS, archivosFONTS)
+	archivosTether = gulp.src('./app/css/tether.min.css');
+
+	return merge(archivosSASS, archivosCSS, archivosFONTS, archivosOWL, archivosTether)
 	.pipe(concat('app.css'))
 	//.pipe(cssmin())
 	//.pipe(rename({suffix: '.min'}))
