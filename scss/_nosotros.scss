@@ -101,27 +101,46 @@
 			flex: 1 1 100%;
 			color: $negro1;
 			margin-bottom: 1rem;
+			padding: 0 1rem;
 		}
 		.p-paneles {
 			flex: 1 1 100%;
 			color: $gris1;
 			font-size: 0.9rem;
+			padding: 0 1rem;
 		}
 		.pestana {
 			background-color: $verde2;
 			.titulo-pestana {
 				a {
-					color: $negro1;
+					color: $blanco;
 					display: block;
 					&:hover {
 						text-decoration: none;
-						color: $blanco;
 					}
 				}
 			}
 		}
 		.contenido-pestana {
-			
+			display: flex;
+			flex-direction: column;
+			.col-izq {
+				p {
+					color: $negro1;
+					font-size: 0.8rem;;
+				}
+				span {
+					font-size: 1rem;
+					font-weight: 600;
+				}
+			}
+			.col-der {
+				img {
+					max-width: 400px;
+					width: 100%;
+					margin: 0 auto;
+				}
+			}
 		}
 	}
 }
@@ -136,6 +155,19 @@ Queries desktop
 	.secciones-internas {
 		.servicio-item {
 			padding: 1rem;
+		}
+		.paneles {
+			.contenido-pestana {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				.col-izq {
+					width: 60%;
+				}
+				.col-der {
+					width: 35%;
+				}
+			}
 		}
 	}
 }
