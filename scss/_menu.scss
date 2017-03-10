@@ -101,4 +101,12 @@ Queries del sitio web
 			}	
 		}
 	}
+	.menu-animado {
+		top: 50px;
+		transition: all .5s ease;
+		box-shadow: 1px 1px 3px $gris1; 
+	}
+	.menu-arriba {
+		top: 0;
+	}
 }

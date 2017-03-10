@@ -1,0 +1,141 @@
+.secciones-internas {
+	margin-top: 92px;
+	position: relative;
+	.h2-home {
+		font-size: 1rem;
+		color: $gris1;
+		line-height: 1.3rem;
+		margin: 2rem 0;
+		font-weight: 600;
+	}
+	.servicio-item {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem 0;
+		justify-content: space-between;
+		.h3-home {
+			font-size: 1.1rem;
+			text-align: center;
+			color: $negro1;
+			text-transform: uppercase;
+			margin: 2rem 0;
+			flex: 1 1 100%;
+		}
+		.p-info {
+			color: $gris1;
+			font-size: 0.9rem;
+			text-align: center;
+			padding: 0 1rem;
+			flex: 1 1 100%;
+			justify-content: center;
+		}
+		.btn-link {
+			color: $blanco;
+			background-color: $verde2;
+			padding: 10px 20px;
+			border-radius: 5px;
+			width: 40%;
+			margin: 1rem auto 2rem;
+			&:hover {
+				text-decoration: none;
+			}
+			i {
+				margin-left: .5rem;
+			}
+		}
+		img {
+			max-width: 400px;
+			margin: 0 auto;
+			width: 100%;
+		}
+	}
+	.contenedor-titulo-seccion {
+		background-color: #f7f7f7;
+		height: 124px;
+		display: flex;
+		align-items: center;
+		padding-left: 1rem;
+		margin-bottom: 3rem;
+		.titulo-seccion {
+			color: $gris1;
+			font-size: 1.6rem;
+			font-weight: 600;
+		}
+	}
+	.p-descripcion {
+		color: $gris1;
+		font-size: 1rem;
+		text-align: center;
+		padding: 0 1rem;
+		max-width: 900px;
+		margin: 0 auto 3rem;
+	}
+	.subtitulo-internas {
+		color: $negro1;
+		font-size: 1.5rem;
+		padding: 1rem 0;
+	} 
+	.recuadro {
+		border: 2px solid $verde2;
+		padding: 1rem;
+		box-sizing: border-box;
+		margin-bottom: 3rem;
+		.icono-lista {
+			color: $verde2;
+			font-size: 1rem;
+			margin-right: 1rem;
+		}
+		.p-recuadro {
+			color: $gris1;
+			font-size: 0.9rem;
+		}
+	}
+	.contenedor-items {
+		margin-bottom: 3rem;
+	}
+	.paneles {
+		margin-bottom: 3rem;
+		display: flex;
+		.tit-paneles {
+			font-size: 1.3rem;
+			flex: 1 1 100%;
+			color: $negro1;
+			margin-bottom: 1rem;
+		}
+		.p-paneles {
+			flex: 1 1 100%;
+			color: $gris1;
+			font-size: 0.9rem;
+		}
+		.pestana {
+			background-color: $verde2;
+			.titulo-pestana {
+				a {
+					color: $negro1;
+					display: block;
+					&:hover {
+						text-decoration: none;
+						color: $blanco;
+					}
+				}
+			}
+		}
+		.contenido-pestana {
+			
+		}
+	}
+}
+.sin-top {
+	margin-top: 0;
+}
+
+/* ---------------------------------
+Queries desktop
+----------------------------------*/
+@include desktop {
+	.secciones-internas {
+		.servicio-item {
+			padding: 1rem;
+		}
+	}
+}
