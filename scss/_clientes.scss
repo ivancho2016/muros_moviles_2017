@@ -1,0 +1,12 @@
+.clientes {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	div {
+		min-height: 40px;
+		border-bottom: 1px solid red;
+		border-right: 1px solid red;
+		padding: 0 1rem;
+		line-height: 40px;
+	}
+}
