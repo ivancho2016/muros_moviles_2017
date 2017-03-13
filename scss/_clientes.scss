@@ -1,12 +1,23 @@
-.clientes {
-	display: flex;
-	width: 100%;
-	flex-direction: column;
-	div {
-		min-height: 40px;
-		border-bottom: 1px solid red;
-		border-right: 1px solid red;
-		padding: 0 1rem;
-		line-height: 40px;
+.lista-clientes {
+	margin-bottom: 3rem;
+	.item-cliente {
+		min-height: 2.5rem;
+		line-height: 2.5rem;
+		font-size: 0.9rem;
+		color: $negro1;
+		border-bottom: 1px solid $gris2;
+		margin: 0 1rem;
+	}
+}
+
+/* ---------------------------------
+Queries tablet
+----------------------------------*/
+@include tablet {
+	.lista-clientes {
+		.item-cliente {
+			margin: 0;
+			border-right: 1px solid $gris2;
+		}
 	}
 }
