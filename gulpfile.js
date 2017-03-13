@@ -92,7 +92,7 @@ gulp.task('miniHTML', function() {
 
 /*minificar imagenes*/
 gulp.task('miniIMG', function() {
-    gulp.src('./app/img/*.{jpg,png,gif}')
+    gulp.src('./app/img/*/*.{jpg,png,gif,svg}')
     .pipe(imagemin())
     .pipe(gulp.dest('dist/img'))
 });
@@ -109,4 +109,4 @@ gulp.task('default', ['watch']);
 
 /*generar archivos para distribución*/
 
-gulp.task('dist', ['miniCSS','moverFuentes', 'miniHTML', 'miniJS', 'miniIMG', 'miniPHP']);
+gulp.task('dist', ['miniCSS','moverFuentes', 'miniHTML', 'miniJS', 'miniIMG']);
